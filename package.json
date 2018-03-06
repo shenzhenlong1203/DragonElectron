@@ -1,0 +1,31 @@
+{
+  "name": "Dragon_SZ",
+  "version": "1.0.0",
+  "description": "Long Long Blog application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager ./ Dragon --win --out ~/work/electron/electron-quick-start/out/ --arch=x64 --version 0.0.1 --overwrite --icon=./app/image/app-icon.icns",
+    "asar": "asar pack DragonSZ-win32-x64/resources/app DragonSZ-win32-x64/resources/app.asar && rm -rf DragonSZ-win32-x64/resources/app"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "asar": "^0.14.0",
+    "electron": "~1.8.2",
+    "electron-packager": "^11.1.0"
+  },
+  "dependencies": {
+    "electron": "~1.8.2",
+    "electron-prebuilt": "^1.4.13",
+    "jquery": "^3.2.1"
+  }
+}
